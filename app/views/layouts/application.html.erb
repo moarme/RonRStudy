@@ -13,14 +13,19 @@
 
   <body>
   	<nav class="navbar-dark bg-dark">
-  		<a class="navbar-brend" href="/about">Mozer</a>
   		<div class="container-fluid">
   			<div class="navbar-header">
-  				
-  			</div>
-  		</div>
-  	<div class="container">
-    	<%= yield %>
+	  			<a class="navbar-brand" href="/about">Mozer</a>
+	  		</div>
+	  		<ul class="nav navbar-nav">
+		      <li class="active"><a href="/">Home</a></li>
+		      <li><a href="/about">About</a></li>
+		    </ul>
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	    <%= yield %>
     </div>
   </body>
 </html>
