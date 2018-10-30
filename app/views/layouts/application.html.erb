@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>RubyTutorial1</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
 	
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,7 +12,7 @@
   </head>
 
   <body>
-  	<nav class="navbar-dark bg-dark">
+  	<nav class="navbar navbar-inverse">
   		<div class="container-fluid">
   			<div class="navbar-header">
 	  			<a class="navbar-brand" href="/about">Mozer</a>
@@ -25,7 +25,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 		</div>
-	    <%= yield %>
+	    <!--<%= yield %>-->
     </div>
   </body>
 </html>
